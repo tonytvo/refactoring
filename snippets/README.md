@@ -2,9 +2,7 @@ My personal notes while reading "Refactoring: Improving the Design of Existing C
 
 If you are the publisher and think this repository should not be public, please write me an email to vuminhthang [dot] cm [at] gmail [dot] com and I will make it private.
 
-Happy reading!
-
-[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Refactoring%20Book%20Summary&url=https://github.com/ittus/Refactoring-summary-2nd-javascript&hashtags=refactoring,javascript,software,developers)
+This would be the basics for other snippets like refactoring to patterns, refactoring to databases
 
 ## 1. TABLE OF CONTENT
 - [1. TABLE OF CONTENT](#1-table-of-content)
@@ -101,6 +99,7 @@ Happy reading!
   - [9. Collapse Hierarchy](#9-collapse-hierarchy)
   - [10. Replace Subclass with Delegate](#10-replace-subclass-with-delegate)
   - [11. Replace Superclass with Delegate](#11-replace-superclass-with-delegate)
+- [13. References](#13-references)
 
 ## 3. BAD SMELLS IN CODE
 
@@ -1697,3 +1696,7 @@ class List {...}
 
 **Motivation**
 - Easier to maintain code
+
+## 13. References
+- https://github.com/ittus/Refactoring-summary-2nd-javascript
+
