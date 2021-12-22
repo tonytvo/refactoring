@@ -1,3 +1,11 @@
+# To do
+
+- re-organize this notes by common sense, topics instead of chapters
+- review other summary notes
+- add questions and answers section
+- add quotes section
+- add references section
+
 https://gist.github.com/jonnyjava/42883d4e464167f81e2ee60a488a5ded
 https://understandlegacycode.com/blog/key-points-of-working-effectively-with-legacy-code/
 https://dev.to/dannypsnl/reflection-on-working-effectively-with-legacy-code-chapter-6-to-10-55g6
