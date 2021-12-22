@@ -6,9 +6,16 @@
 - add quotes section
 - add references section
 
+# References
+
 https://gist.github.com/jonnyjava/42883d4e464167f81e2ee60a488a5ded
 https://understandlegacycode.com/blog/key-points-of-working-effectively-with-legacy-code/
 https://dev.to/dannypsnl/reflection-on-working-effectively-with-legacy-code-chapter-6-to-10-55g6
+https://gist.github.com/jonnyjava/42883d4e464167f81e2ee60a488a5ded
+https://biratkirat.medium.com/working-effectively-with-legacy-code-series-251b9c7d8c15
+https://martinfowler.com/articles/patterns-legacy-displacement/
+https://quizlet.com/ca/186072277/working-effectively-with-legacy-code-flash-cards/
+
 # WORKING EFFECTIVELY WITH LEGACY CODE
 
 To me, legacy code is simply code without tests. I’ve gotten some grief for this definition. What do tests have to do with whether code is bad?
