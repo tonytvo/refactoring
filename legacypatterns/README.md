@@ -15,6 +15,7 @@ https://gist.github.com/jonnyjava/42883d4e464167f81e2ee60a488a5ded
 https://biratkirat.medium.com/working-effectively-with-legacy-code-series-251b9c7d8c15
 https://martinfowler.com/articles/patterns-legacy-displacement/
 https://quizlet.com/ca/186072277/working-effectively-with-legacy-code-flash-cards/
+https://www.infoq.com/podcasts/working-effectively-legacy-code/
 
 # WORKING EFFECTIVELY WITH LEGACY CODE
 
