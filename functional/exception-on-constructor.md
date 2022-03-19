@@ -5,3 +5,11 @@ public Barcode(String text) {
     else this.text = text;
 }
 ```
+
+after
+```
+public static Either<IllegalArgumentException, Barcode> barcodeFrom(String text) {
+    if ("".equals(text)) return Either.left(new IllegalArgumentException("barcode can't be empty"));
+    else return Either.right(new Barcode(text));
+}
+```
