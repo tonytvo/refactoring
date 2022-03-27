@@ -24,7 +24,54 @@
 - long method name might be a sign of a misplaced responsibility, or a missing class
 - try to keep class and method names to 1-2 words, and avoid names that duplicate the context. If the class is an `Order`, the method doesn't need to be called `shipOrder()`
 ## keep all entities small
+- no class over 50 lines and no package over 10 files
+  - 50 lines classes have the added benefit of being visible on one screen without scrolling, which makes them easier to grasp quickly.
+  - packages, like classes, should be cohesive and have a purpose.
 ## no classes, with more than 2 instance variables
+- most classes should simply be responsible for handling single state variable.
+- typically, there are 2 kinds of classes, those that maintain the state of a single instance variable, and those that coordinate 2 separate variable. In general, don't mix the 2 kinds of responsibilities.
+- frequently, decomposition of instance variables leads to an understanding of commonality of several related instance variable.
+- behavior naturally follows the instance variables into the appropriate place.
+## no getters/setters/properties
+- tell, don't ask.
+- whatever method use object A's getter usually indicate that it should be moved into A.
 
+# Functional Calisthenics Rules
+
+## side effects can only occur at the top level
+- we want majority of our code to be `pure functions` where the code doesn't depend on anything that is impure. This means we should pull impure functions up to the top level and isolate them as much as possible from the rest of the code. This can include:
+  - user interaction
+  - database access
+  - API calls.
+
+## no mutable state
+- we don't want mutate state within a function either, e.g. do not re-use variables.
+
+## expressions not statements
+- if we're calling a function that does not return anything then we are probably expecting that some mutable state will be changes as a part of this call and the function will not be pure.
+- object's API provides a clear separation between commands and queries [functional programming in object oriented languages](http://www.harukizaemon.com/blog/2010/03/01/functional-programming-in-object-oriented-languages/).
+
+## Functions should have one argument
+- a function with a large number of arguments smells of a `single responsibility principle` violation.
+- [currying](https://en.wikipedia.org/wiki/Currying)
+- an object a collection of partially applied functions. [functional programming in object oriented languages](http://www.harukizaemon.com/blog/2010/03/01/functional-programming-in-object-oriented-languages/).
+  - `f(a, b, c) -> new A(a, b).f(c)`
+
+## no explicit recursion
+- prefer separating the method of recursion away from the logic that you're trying to execute
+
+## maximum level of abstraction
+- functions should take the highest level of abstraction possible, e.g., if `List` is a special case of Enumerable, then the function should take Enumerable.
+
+## use infinite sequences
+- if your function takes, or returns, a sequence of data then write the function in a way that does not exclude infinite sequences, allow for tail recursion
+
+## no if
+- "if is just a special case of pattern matching anyway"
+
+## parse don't validate
+- [CHECKS - pattern language of information integrity](http://c2.com/ppr/checks.html)
 # References
 - [object-calisthenics](https://www.cs.helsinki.fi/u/luontola/tdd-2009/ext/ObjectCalisthenics.pdf)
+- http://c2.com/ppr/checks.html
+- http://www.harukizaemon.com/blog/2010/03/01/functional-programming-in-object-oriented-languages/
