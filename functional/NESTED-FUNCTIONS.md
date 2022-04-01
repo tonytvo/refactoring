@@ -17,3 +17,6 @@ const duplicate = (x) => x * 2;
 const square = (x) => x * x;
 [1, 2, 3].map(addOne).map(duplicate).map(square);
 ```
+
+i.e.:
+![lambda separate as map]()
