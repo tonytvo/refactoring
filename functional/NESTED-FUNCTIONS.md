@@ -19,4 +19,4 @@ const square = (x) => x * x;
 ```
 
 i.e.:
-![lambda separate as map]()
+![lambda separate as map](./extract-variable-as-separate-map-in-lambda.gif)
