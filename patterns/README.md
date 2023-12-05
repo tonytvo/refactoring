@@ -1,3 +1,5 @@
+# refactoring to strategy
+- https://github.com/tonytvo/refactor-to-strategy-domain
 # To do
 - add 5 examples of refactoring to patterns (code samples and solutions)
 # References
